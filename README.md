@@ -1,18 +1,18 @@
 # Linked Data Fragments Server - JSON-LD Endpoint Datasources
 <img src="http://linkeddatafragments.org/images/logo.svg" width="200" align="right" alt="" />
 
-[![npm version](https://badge.fury.io/js/%40ldf%2Fdatasource-conceptnet.svg)](https://www.npmjs.com/package/@ldf/datasource-conceptnet)
+[![npm version](https://badge.fury.io/js/%40ldf%2Fdatasource-conceptnet.svg)](https://www.npmjs.com/package/datasource-conceptnet)
 
 
-This module contains a JSON-LD service datasource for the [Linked Data Fragments server](https://github.com/LinkedDataFragments/Server.js).
-It allows JSON-LD services to be used as a data proxy.
+This module contains a Conceptnet datasource for the [Linked Data Fragments server](https://github.com/LinkedDataFragments/Server.js).
+It allows Conceptnet to be used as a data proxy.
 
 _This package is a [Linked Data Fragments Server module](https://github.com/LinkedDataFragments/Server.js/)._
 
 ## Usage in `@ldf/server`
 
 This package exposes the following config entries:
-* `ConceptNetDatasource`: A JSON-LD service based datasource that requires at least one `endpoint` field. _Should be used as `@type` value._
+* `ConceptNetDatasource`: A Conceptnet based datasource that requires at least one `endpoint` field. _Should be used as `@type` value._
 * `endpoint`: Refers to a JSON-LD endpoint capable of receiving and processing requests. _Should be used as key in a `ConceptNetDatasource`._
 *  `baseUri`: Refers to a base URI that will be prefixed to the results. _Should be used as key in a `ConceptNetDatasource`._
 * `languages`: Refers to filtering the results by some langagues. Default []. _Should be used as key in a `ConceptNetDatasource`._
@@ -28,7 +28,7 @@ Example:
     {
       "@id": "urn:ldf-server:myJsonLdServiceDatasource",
       "@type": "ConceptNetDatasource",
-      "datasourceTitle": "My JSON-LD service source",
+      "datasourceTitle": "My Conceptnet source",
       "description": "My datasource with a JSON_LD service",
       "datasourcePath": "myjsonldservice",
       "endpoint": "https://api.conceptnet.io/query", 
@@ -42,7 +42,7 @@ Example:
 ## Usage in other packages
 
 When this module is used in a package other than `@ldf/server`,
-then the ConceptNet context `https://linkedsoftwaredependencies.org/contexts/@ldf/datasource-conceptnet.jsonld` must be imported.
+then the ConceptNet context `https://linkedsoftwaredependencies.org/contexts/datasource-conceptnet.jsonld` must be imported.
 
 For example:
 ```
@@ -50,7 +50,7 @@ For example:
   "@context": [
     "https://linkedsoftwaredependencies.org/bundles/npm/@ldf/core/^3.0.0/components/context.jsonld",
     "https://linkedsoftwaredependencies.org/bundles/npm/@ldf/preset-qpf/^3.0.0/components/context.jsonld",
-    "https://linkedsoftwaredependencies.org/bundles/npm/@ldf/datasource-conceptnet/^3.0.0/components/context.jsonld",
+    "https://linkedsoftwaredependencies.org/bundles/npm/datasource-conceptnet/^3.0.0/components/context.jsonld",
   ],
   // Same as above...
 }

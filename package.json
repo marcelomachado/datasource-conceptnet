@@ -1,0 +1,47 @@
+{
+  "name": "datasource-conceptnet",
+  "description": "Linked Data Fragments Server - ConceptNet Datasource",
+  "version": "1.0.0",
+  "lsd:module": true,
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "index.js",
+  "files": [
+    "components",
+    "lib/**/*.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelomachado/datasource-conceptnet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcelomachado/datasource-conceptnet/issues"
+  },
+  "scripts": {
+    "test": "nyc mocha",
+    "lint": "eslint bin/* lib test"
+  },
+  "dependencies": {
+    "jsonld": "^8.1.0",
+    "lru-cache": "^7.14.0",
+    "node-fetch": "2",
+    "object-hash": "^3.0.0",
+    "sparqljson-parse": "^1.5.1"
+  },
+  "peerDependencies": {
+    "@ldf/core": "^3.0.0"
+  },
+  "devDependencies": {
+    "@ldf/core": "^3.2.1",
+    "nyc": "^15.1.0"
+  },
+  "author": "Marcelo Machado <marcelo.oc.machado@gmail.com>",
+  "homepage": "https://github.com/marcelomachado/datasource-conceptnet#readme",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  }
+}

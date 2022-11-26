@@ -5,14 +5,13 @@
 
   "datasources": [
     {
-      "@id": "urn:ldf-server:myJsonLdServiceDatasource",
+      "@id": "urn:ldf-server:ConceptNetDatasource",
       "@type": "ConceptNetDatasource",
       "datasourceTitle": "My Conceptnet",
       "description": "My datasource with a Conceptnet",
-      "datasourcePath": "myjsonldservice",
+      "datasourcePath": "myconceptnet",
       "endpoint": "https://api.conceptnet.io/query",
-      "baseUri": "http://conceptnet.io",
-      "languages": ["en"]
+      "baseUri": "http://conceptnet.io"
     }
   ]
 }

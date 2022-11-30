@@ -1,5 +1,5 @@
 {
-  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/datasource-conceptnet/^1.0.0/components/context.jsonld",
+  "@context": "https://linkedsoftwaredependencies.org/bundles/npm/datasource-conceptnet/^1.1.0/components/context.jsonld",
   "@id": "npmd:datasource-conceptnet",
   "@type": "Module",
   "requireName": "datasource-conceptnet",

@@ -4,7 +4,7 @@
     {
       "npmd": "https://linkedsoftwaredependencies.org/bundles/npm/",
       "ldfdcn": "npmd:datasource-conceptnet/",
-      "files-ldfdcn": "ldfdcn:^1.1.0/",
+      "files-ldfdcn": "ldfdcn:^1.1.1/",
 
       "ConceptNetDatasource": "ldfdcn:Datasource/ConceptNet",
       "endpoint": "ldfdcn:Datasource/ConceptNet#endpoint",

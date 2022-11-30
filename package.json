@@ -1,7 +1,7 @@
 {
   "name": "datasource-conceptnet",
   "description": "Linked Data Fragments Server - ConceptNet Datasource",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "lsd:module": true,
   "license": "MIT",
   "publishConfig": {
